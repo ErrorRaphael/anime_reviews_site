@@ -1,18 +1,27 @@
-﻿@page "/counter"
+﻿@page "/Counter"
+<link rel="stylesheet" type="text/css" href="Counter.razor.css" />
 
-<PageTitle>Counter</PageTitle>
+<PageTitle>Anime Reviews</PageTitle>
 
-<h1>Counter</h1>
 
-<p role="status">Current count: @currentCount</p>
+<h1 style="color:#aabbff;text-align:center">Main Reviews</h1>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<section>
+    <a href="../Pages/Review.razor"> Sword Art Online</a>
+
+    <p > 
+        Ever since the release of the innovative NerveGear, gamers from all around the globe have been given the opportunity to experience a completely immersive virtual reality. Sword Art Online (SAO), one of the most recent games on the console, offers a gateway into the wondrous world of Aincrad, a vivid, medieval landscape where users can do anything within the limits of imagination. With the release of this worldwide sensation, gaming has never felt more lifelike.
+
+However, the idyllic fantasy rapidly becomes a brutal nightmare when SAO's creator traps thousands of players inside the game. The "log-out" function has been removed, with the only method of escape involving beating all of Aincrad's one hundred increasingly difficult levels. Adding to the struggle, any in-game death becomes permanent, ending the player's life in the real world.
+
+While Kazuto "Kirito" Kirigaya was fortunate enough to be a beta-tester for the game, he quickly finds that despite his advantages, he cannot overcome SAO's challenges alone. Teaming up with Asuna Yuuki and other talented players, Kirito makes an effort to face the seemingly insurmountable trials head-on. But with difficult bosses and threatening dark cults impeding his progress, Kirito finds that such tasks are much easier said than done.
+
+(myanimelist.net)
+    </p>
+    <img src="https://img.comunidades.net/dig/digitalnews/5fe886f3daa6485efecf1ea6dc5207931343265548_full.jpg" style="height:465px; width:314px;"/>
+</section>
+
 
 @code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
+    
 }
