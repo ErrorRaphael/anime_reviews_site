@@ -1,39 +1,27 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">Site anime</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+﻿<nav class="navbar @NavMenuCssClass bg-dark" id="generic-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            Navbar
+            <button @onclick=ToggleNavMenu class="navbar-toggler" type="button" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+                <span>TESTE </span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <NavLink class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </NavLink>
+                <NavLink class="nav-item" href="review">
+                    <a class="nav-link">Review</a>
+                </NavLink>
+                <NavLink class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </NavLink>
+            </ul>
+        </div>
+        <NavLink class="d-flex" href="about-us">
+            <a>About Us</a>
+        </NavLink>
     </div>
-</div>
-
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="about-us">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> About Us
-            </NavLink>
-        </div>
-    </nav>
-</div>
-
-@code {
-    private bool collapseNavMenu = true;
-
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-}
+</nav>
