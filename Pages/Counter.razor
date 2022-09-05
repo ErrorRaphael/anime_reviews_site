@@ -1,27 +1,48 @@
-﻿@page "/Counter"
+﻿@page "/Review"
 <link rel="stylesheet" type="text/css" href="Counter.razor.css" />
 
 <PageTitle>Anime Reviews</PageTitle>
 
-
 <h1 style="color:#aabbff;text-align:center">Main Reviews</h1>
 
-<section>
-    <a href="../Pages/Review.razor"> Sword Art Online</a>
+<div class="row">
+	<div class="col-sm-6">
+		<div class="card-group">
 
-    <p > 
-        Ever since the release of the innovative NerveGear, gamers from all around the globe have been given the opportunity to experience a completely immersive virtual reality. Sword Art Online (SAO), one of the most recent games on the console, offers a gateway into the wondrous world of Aincrad, a vivid, medieval landscape where users can do anything within the limits of imagination. With the release of this worldwide sensation, gaming has never felt more lifelike.
-
-However, the idyllic fantasy rapidly becomes a brutal nightmare when SAO's creator traps thousands of players inside the game. The "log-out" function has been removed, with the only method of escape involving beating all of Aincrad's one hundred increasingly difficult levels. Adding to the struggle, any in-game death becomes permanent, ending the player's life in the real world.
-
-While Kazuto "Kirito" Kirigaya was fortunate enough to be a beta-tester for the game, he quickly finds that despite his advantages, he cannot overcome SAO's challenges alone. Teaming up with Asuna Yuuki and other talented players, Kirito makes an effort to face the seemingly insurmountable trials head-on. But with difficult bosses and threatening dark cults impeding his progress, Kirito finds that such tasks are much easier said than done.
-
-(myanimelist.net)
-    </p>
-    <img src="https://img.comunidades.net/dig/digitalnews/5fe886f3daa6485efecf1ea6dc5207931343265548_full.jpg" style="height:465px; width:314px;"/>
-</section>
-
+			<div class="card mb-3" style="max-width: 540px;">
+				<div class="row g-0">
+					<div class="col-md-4">
+						<img src="https://img.comunidades.net/dig/digitalnews/5fe886f3daa6485efecf1ea6dc5207931343265548_full.jpg" class="img-fluid rounded-start" alt="Sword Art Online Cover">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">Sword Art Online</h5>
+							<p class="card-text">The story of the first season follows the adventures of Kazuto "Kirito" Kirigaya and Asuna Yuuki, two players who are trapped in the virtual world of "Sword Art Online" (SAO). They are tasked to clear all 100 Floors and defeat the final boss in order to be freed from the game.</p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							<a href="#" class="btn btn-primary">See this review</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card mb-3" style="max-width: 540px;">
+				<div class="row g-0">
+					<div class="col-md-4">
+						<img src="https://br.web.img3.acsta.net/pictures/19/09/18/13/46/0198270.jpg" class="img-fluid rounded-start" alt="Demon slayer cover">
+					</div>
+					<div class="col-md-8">
+						<div class="card-body">
+							<h5 class="card-title">Kimetsu no Yaiba (Demon Slayer)</h5>
+							<p class="card-text">Kimetsu no Yaiba follows teenage Tanjiro Kamado, who strives to become a demon slayer after his family was slaughtered and his younger sister, Nezuko, turned into a demon. </p>
+							<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+							<a href="#" class="btn btn-primary">See this review</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 @code {
-    
+
 }
