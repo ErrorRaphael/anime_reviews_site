@@ -1,11 +1,7 @@
 ﻿<nav class="navbar @NavMenuCssClass bg-dark" id="generic-navbar">
-    <div class="container">
-        <a class="navbar-brand" href="#">
+    <div class="container-fluid">
+        <a class="navbar-brand" @onclick=ToggleNavMenu>
             Navbar
-            <button @onclick=ToggleNavMenu class="navbar-toggler" type="button" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-                <span>TESTE </span>
-                <span class="navbar-toggler-icon"></span>
-            </button>
         </a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
