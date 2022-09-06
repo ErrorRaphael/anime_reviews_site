@@ -1,3 +1,21 @@
 ﻿.generic-footer {
-    background-color: grey;
+    box-shadow: 0px 0px 12px 0px rgb(0, 0, 0, 0.1);
+    padding: 30px 0;
+    color: #222222;
+    font-size: 14px;
+    position:fixed;
+    bottom: 0;
+    width: 100%
+}
+
+#image {
+    padding-right: 15px;
+}
+
+#copyright {
+    text-align: left !important;
+}
+
+#infos {
+    text-align: right !important;
 }
