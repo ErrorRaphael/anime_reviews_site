@@ -1,6 +1,8 @@
-﻿@page "/anime-review"
-<h3>Review</h3>
+﻿@using Site_anime.Model.Dto
+
+<h1>SelectedReview.Title</h1>
 
 @code {
-
+    [Parameter]
+    public ReviewDto? SelectedReview { get; set; }
 }
